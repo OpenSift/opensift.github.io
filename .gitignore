@@ -435,3 +435,4 @@ Thumbs.db
 
 # Ruby
 *.gem
+Gemfile.lock

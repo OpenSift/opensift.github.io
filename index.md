@@ -25,7 +25,7 @@ You ingest sources, then ask questions via a chatbot UI. OpenSift retrieves the 
 > **Designed to run on localhost** with authentication and rate limiting enabled.
 
 ## Screenshots / Demo
-Add a demo GIF at: `assets/images/demo.gif` and embed it like this:
-
-```md
-![Demo](assets/images/demo.gif)
+![Demo](assets/images/screenshot.png)
+![Study Guide](assets/images/study_guide.png)
+![Key Points](assets/images/key_points.png)
+![Quiz Me](assets/images/quiz_me.png)

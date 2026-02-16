@@ -1,9 +1,8 @@
 title: OpenSift Docs
 description: Local-first AI study assistant — ingest PDFs & URLs, ask questions, generate study guides & quizzes.
-theme: just-the-docs
 
-url: "opensift.org"
-baseurl: "opensift.org"
+# Use Just the Docs via remote_theme (works on GitHub Pages)
+remote_theme: just-the-docs/just-the-docs
 
 # Just the Docs settings
 color_scheme: dark
@@ -15,7 +14,7 @@ nav_sort: case_sensitive
 
 aux_links:
   "OpenSift on GitHub":
-    - "https://github.com/OpenSift/OpenSift"
+    - "https://github.com/YOUR_ORG_OR_USERNAME/OpenSift"
 
 footer_content: "OpenSift • Local-first AI study assistant"
 
@@ -26,6 +25,12 @@ gh_edit_repository: "https://github.com/YOUR_ORG_OR_USERNAME/opensift-docs"
 gh_edit_branch: "main"
 gh_edit_source: ""
 gh_edit_view_mode: "tree"
+
+# Plugins (must match Gemfile)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Keep markdown simple
 markdown: kramdown
