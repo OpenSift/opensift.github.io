@@ -1,0 +1,34 @@
+title: OpenSift Docs
+description: Local-first AI study assistant — ingest PDFs & URLs, ask questions, generate study guides & quizzes.
+theme: just-the-docs
+
+url: "opensift.org"
+baseurl: "opensift.org"
+
+# Just the Docs settings
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+
+# Nav order + labels
+nav_sort: case_sensitive
+
+aux_links:
+  "OpenSift on GitHub":
+    - "https://github.com/OpenSift/OpenSift"
+
+footer_content: "OpenSift • Local-first AI study assistant"
+
+# Enable "Edit this page" (optional)
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/YOUR_ORG_OR_USERNAME/opensift-docs"
+gh_edit_branch: "main"
+gh_edit_source: ""
+gh_edit_view_mode: "tree"
+
+# Keep markdown simple
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
