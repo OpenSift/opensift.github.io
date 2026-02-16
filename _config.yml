@@ -14,14 +14,14 @@ nav_sort: case_sensitive
 
 aux_links:
   "OpenSift on GitHub":
-    - "https://github.com/YOUR_ORG_OR_USERNAME/OpenSift"
+    - "https://github.com/OpenSift/OpenSift"
 
 footer_content: "OpenSift • Local-first AI study assistant"
 
 # Enable "Edit this page" (optional)
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/YOUR_ORG_OR_USERNAME/opensift-docs"
+gh_edit_repository: "https://github.com/opensift/opensift.github.io"
 gh_edit_branch: "main"
 gh_edit_source: ""
 gh_edit_view_mode: "tree"
