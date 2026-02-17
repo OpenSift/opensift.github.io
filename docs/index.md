@@ -16,6 +16,7 @@ OpenSift documentation aligned to the main OpenSift project repository.
 - [Troubleshooting](troubleshooting.md)
 - [Security](security.md)
 - [Roadmap](roadmap.md)
+- [Release Notes](release-notes.md)
 
 ## Runtime modes
 OpenSift supports multiple launch modes from `backend/opensift.py`:

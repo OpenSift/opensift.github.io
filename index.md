@@ -31,6 +31,7 @@ Outputs include:
 - [Chat UI](docs/ui.md)
 - [Ingestion](docs/ingestion.md)
 - [Providers](docs/providers.md)
+- [Release Notes](docs/release-notes.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Security](docs/security.md)
 
