@@ -6,22 +6,34 @@ parent: Documentation
 
 # Providers
 
-OpenSift can generate output using different providers.
+OpenSift can generate output using three provider modes.
 
-## Claude Code (setup-token)
-Best for local dev workflows where you use a Claude setup token.
+## Claude Code (recommended local workflow)
+Requirements:
+- Claude Code CLI installed
+- token configured via `claude setup-token`
+- `CLAUDE_CODE_OAUTH_TOKEN` available
 
-## Claude (API key)
-Works if you provide an Anthropic API key.
+Optional environment knobs:
+- `OPENSIFT_CLAUDE_CODE_CMD`
+- `OPENSIFT_CLAUDE_CODE_ARGS`
 
-## OpenAI (API key)
-Works if you provide an OpenAI API key.
+## Claude API (Anthropic)
+Requirements:
+- `ANTHROPIC_API_KEY`
 
-## No provider mode
-Even without a provider configured, OpenSift can still:
+## OpenAI API
+Requirements:
+- `OPENAI_API_KEY`
 
+## Model defaults
+- OpenAI default: `gpt-5.2`
+- Claude default: `claude-sonnet-4-5`
+
+## No-provider mode
+Even without generation credentials, OpenSift can still:
 - ingest
 - retrieve
-- show relevant passages
+- return relevant passages
 
-Generation features require a configured provider.
+Generation features require one configured provider.

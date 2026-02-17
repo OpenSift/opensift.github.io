@@ -1,5 +1,5 @@
 title: OpenSift Docs
-description: Local-first AI study assistant — ingest PDFs & URLs, ask questions, generate study guides & quizzes.
+description: AI-powered local-first study assistant for ingesting sources, retrieval, and grounded generation.
 
 # Use Just the Docs via remote_theme (works on GitHub Pages)
 remote_theme: just-the-docs/just-the-docs
@@ -16,12 +16,12 @@ aux_links:
   "OpenSift on GitHub":
     - "https://github.com/OpenSift/OpenSift"
 
-footer_content: "OpenSift • Local-first AI study assistant"
+footer_content: "OpenSift • Sift faster. Study smarter."
 
 # Enable "Edit this page" (optional)
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/opensift/opensift.github.io"
+gh_edit_repository: "https://github.com/OpenSift/opensift.github.io"
 gh_edit_branch: "main"
 gh_edit_source: ""
 gh_edit_view_mode: "tree"

@@ -6,24 +6,42 @@ parent: Documentation
 
 # Ingestion
 
-OpenSift supports ingestion via:
-
+OpenSift supports source ingestion via:
 - URLs (web pages / articles)
 - PDF uploads
-- Text uploads (.txt, .md)
+- text uploads (`.txt`, `.md`)
 
 ## URL ingestion
-Paste a URL in the ingest panel. OpenSift fetches text, chunks it, embeds it, and stores it for retrieval.
+Paste a URL in the Ingest panel. OpenSift:
+1. fetches the page with retry/timeout safeguards
+2. extracts and normalizes main content
+3. falls back to broader body-text extraction when needed
+4. chunks + embeds + stores content in local vector DB
+
+URL handling includes:
+- basic URL validation
+- auto-prefixing `https://` when scheme is omitted
+- actionable error messages when ingestion fails
+
+Common failure reasons:
+- site blocks automated scraping
+- content requires client-side JavaScript rendering
+- page has too little extractable text
 
 ## PDF ingestion
 Upload a PDF file. OpenSift extracts text and ingests it.
 
-> If a PDF is scanned images, text extraction may be empty (OCR is not enabled by default).
+For scanned PDFs, OpenSift attempts OCR fallbacks (when local OCR tooling is available), including:
+- image-based extraction from embedded PDF images
+- `pdf2image` + `pytesseract` fallback path
 
-## Chunking & embeddings
+## Namespace behavior
+Ingestion is scoped to the current owner namespace so subjects remain separate.
+
+## Chunking and embeddings
 Ingested content is:
 1. chunked
 2. embedded
-3. stored in the local vector database
+3. stored for semantic retrieval
 
-Queries retrieve the top matching chunks.
+Queries retrieve top matching chunks for grounded generation.

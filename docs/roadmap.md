@@ -7,15 +7,15 @@ parent: Documentation
 # Roadmap
 
 ## Short term
-- Better source citations in the UI (highlight quoted passages)
-- OCR option for scanned PDFs
-- Export study guides to Markdown / PDF
+- true token streaming consistency across providers
+- OCR accuracy improvements for scanned PDFs
+- stronger citation/source UX in chat responses
 
 ## Medium term
-- Multi-user support (still local)
-- Topic graphs / concept maps
-- Deck/flashcard export (Anki-compatible)
+- persistent memory and conversation management refinements
+- authentication hardening
+- multi-user support
 
 ## Long term
-- Plugin ingestion pipelines (notes apps, LMS exports)
-- Personal study “curriculum builder”
+- Docker and deployment workflow improvements
+- UI theming and plugin-style ingestion pipelines

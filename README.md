@@ -1,66 +1,40 @@
 # opensift.github.io
-OpenSift Official Website
 
-# OpenSift Docs
-
-Documentation site for **OpenSift — a local-first AI study assistant**.
+Documentation site for [OpenSift](https://github.com/OpenSift/OpenSift).
 
 Built with:
 - Jekyll
 - Just the Docs
 - Markdown-first structure
-- Hosted on GitHub Pages
+- GitHub Pages
 
----
+## Local development
 
-# 🚀 Local Development
-
-## 1️⃣ Install Ruby (if needed)
-
-Check:
+1. Check Ruby:
 
 ```bash
 ruby -v
-
-If not installed:
-	•	macOS: brew install ruby
-	•	Ubuntu: sudo apt install ruby-full
-	•	Windows: RubyInstaller
-
-2️⃣ Install dependencies
-
-From the repo root:
-
 ```
+
+2. Install dependencies:
+
+```bash
 bundle install
 ```
 
-3️⃣ Run locally
+3. Run the docs site:
 
-```
+```bash
 bundle exec jekyll serve
 ```
 
-Then open:
-```
-http://localhost:4000/
-```
+4. Open [http://localhost:4000](http://localhost:4000).
 
-The site will rebuild automatically when you edit Markdown files.
+## Deploy
 
+Push to `main`. GitHub Pages builds from root (`/`) in this repo.
 
-🌐 Deploy to GitHub Pages
-	1.	Push to main
-	2.	Go to:
-	•	Settings → Pages
-	3.	Select:
-	•	Deploy from branch
-	•	Branch: main
-	•	Folder: / (root)
-
-GitHub will automatically build and deploy.
-
-📂 Structure
+## Docs structure
 
 ```text
 /
@@ -68,35 +42,17 @@ GitHub will automatically build and deploy.
 ├── Gemfile
 ├── index.md
 ├── docs/
+│   ├── index.md
 │   ├── quickstart.md
-│   ├── security.md
 │   ├── ui.md
-│   ├── providers.md
 │   ├── ingestion.md
+│   ├── providers.md
+│   ├── security.md
 │   ├── troubleshooting.md
 │   └── roadmap.md
 └── assets/
 ```
 
-🧠 Philosophy
-
-OpenSift is:
-	•	Local-first
-	•	Security-conscious
-	•	Designed for students overwhelmed by information
-	•	Built around retrieval-grounded AI workflows
-
-⸻
-
-🛠 Contributing
-	1.	Create a branch
-	2.	Edit Markdown files
-	3.	Submit a PR
-
-⸻
-
-📜 License
+## License
 
 MIT
-
----

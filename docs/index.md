@@ -6,21 +6,29 @@ has_children: true
 
 # Documentation
 
-Welcome to the OpenSift docs.
+OpenSift documentation aligned to the main OpenSift project repository.
 
 ## Start here
 - [Quick Start](quickstart.md)
 - [Using the Chat UI](ui.md)
 - [Ingestion (PDFs + URLs)](ingestion.md)
 - [Providers](providers.md)
-- [Security](security.md)
 - [Troubleshooting](troubleshooting.md)
+- [Security](security.md)
+- [Roadmap](roadmap.md)
+
+## Runtime modes
+OpenSift supports multiple launch modes from `backend/opensift.py`:
+- `setup`: interactive first-run configuration and launch chooser
+- `gateway`: supervised UI process plus optional MCP server
+- `ui`: UI server only
+- `terminal`: terminal chat only
 
 ## Mental model
-OpenSift works in three steps:
+OpenSift runs as a retrieval-grounded workflow:
 
-1. **Ingest**: PDF or URL content is chunked and embedded.
-2. **Retrieve**: queries fetch the most relevant chunks.
-3. **Generate**: optional provider turns retrieved context into study output.
+1. **Ingest**: URL or file content is chunked and embedded.
+2. **Retrieve**: semantic search returns relevant local context.
+3. **Generate**: provider-backed responses stream from grounded context.
 
-Everything is optimized for **fast study workflows**.
+By default, deployment is local-first and optimized for study workflows.
