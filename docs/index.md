@@ -19,6 +19,7 @@ Current documented release: **v1.1.3-alpha (Proposed)**
 - [Security](security.md)
 - [Roadmap](roadmap.md)
 - [Release Notes](release-notes.md)
+- [Security Advisories](security-advisories.md)
 
 ## Runtime modes
 OpenSift supports multiple launch modes from `backend/opensift.py`:

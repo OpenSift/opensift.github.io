@@ -70,6 +70,9 @@ Rate limiting is applied to sensitive/high-volume POST surfaces:
 - `OPENSIFT_MAX_HISTORY_TURNS`
 - `OPENSIFT_MAX_RETRIEVAL_K`
 
+## Advisory Index
+- [Security Advisories](security-advisories.md)
+
 ## Recommendations
 - Keep OpenSift local (do not expose directly to the public internet)
 - Treat provider API keys/tokens as secrets
