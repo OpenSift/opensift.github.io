@@ -14,6 +14,8 @@ nav_order: 1
 
 OpenSift is an AI-powered, local-first study assistant for working through large source sets (PDFs, URLs, notes) with grounded retrieval and generation.
 
+Current documented release: **v1.1.3-alpha (Proposed)**
+
 Core workflow:
 1. Ingest content (URL, PDF, TXT, MD)
 2. Retrieve relevant chunks from local vector search

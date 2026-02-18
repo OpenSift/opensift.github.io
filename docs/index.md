@@ -8,6 +8,8 @@ has_children: true
 
 OpenSift documentation aligned to the main OpenSift project repository.
 
+Current documented release: **v1.1.3-alpha (Proposed)**
+
 ## Start here
 - [Quick Start](quickstart.md)
 - [Using the Chat UI](ui.md)
