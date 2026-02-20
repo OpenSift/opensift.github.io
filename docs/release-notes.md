@@ -6,6 +6,36 @@ parent: Documentation
 
 # OpenSift Release Notes
 
+## v1.5.0-alpha
+Release date: 2026-02-20
+
+This release focuses on a full UI polish pass and major Library/chat workflow improvements.
+
+### Highlights
+- Unified UI refresh across chat, settings, library, and login with a consistent light dashboard design.
+- Added global library browsing across owners (single pane view of all uploaded items).
+- Added visible References section in chat responses from retrieved/pinned sources.
+- Added delete-chat flow option to keep or delete linked library items.
+- Added owner-correct “Ask From Chat” from Library, with auto-open or auto-create of the target owner chat.
+
+### Library and Chat
+- Library now supports all-owner browsing, owner-aware item operations, and clearer owner metadata in lists/details.
+- Chat now renders source references directly in assistant responses.
+- Library-to-chat handoff now routes to the correct owner context and ensures a session exists.
+
+### PDF and Preview
+- Improved PDF preview reliability, including compatibility for legacy items identified by file extension.
+- Added clearer fallback guidance for browsers that block inline PDF rendering (including Safari Lockdown Mode behavior).
+
+### UI/Design
+- Updated OpenSift surfaces to a unified “Gateway” visual identity with light-blue accent styling.
+- Improved fixed-layout behavior so left navigation remains stable while chat/content areas scroll appropriately.
+
+### Quality
+- Backend/UI tests pass in Docker for this release cycle.
+
+---
+
 ## v1.1.3-alpha (Proposed)
 Release date: 2026-02-18
 
